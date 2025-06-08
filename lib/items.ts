@@ -3,7 +3,7 @@ export type itemToSellType = {
     name: string;
     price: number;
     description?: string;
-    image?: string;
+    image: string;
 }
 
 /// Array with the Items to sell of @type itemToSell.
