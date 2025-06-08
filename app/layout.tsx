@@ -17,6 +17,7 @@ const geistMono = GeistMono({
 
 const josefinSans = JosefinSans({
   variable: "--font-josefin-sans",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
