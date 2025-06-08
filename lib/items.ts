@@ -1,13 +1,7 @@
-export type itemToSellType = {
-    slug: string;
-    name: string;
-    price: number;
-    description?: string;
-    image: string;
-}
+import { itemToSell } from '@/types/interface'
 
 /// Array with the Items to sell of @type itemToSell.
-export const itemsToSell: itemToSellType[] = [
+export const itemsToSell: itemToSell[] = [
     {
         slug: 'the-unicorn',
         name: 'The Unicorn',
