@@ -2,7 +2,7 @@ import { itemsToSell } from '@/lib/items'
 import Link from 'next/link'
 import DisplayItem from '@/components/DisplayItem/DisplayItem'
 
-export default async function ProductPage({params}: {params: {slug: string}}) {
+export default async function ProductPage({params}: { params: Promise<{ slug: string }>}) {
   const { slug } = await params;
   const item =  itemsToSell.find(item => item.slug === slug);
 
