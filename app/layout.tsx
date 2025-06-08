@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono as GeistMono } from "next/font/google";
+import { Geist, Geist_Mono as GeistMono, Josefin_Sans as JosefinSans } from "next/font/google";
 import "./globals.css";
 import React from "react";
 
@@ -12,6 +12,10 @@ const geistMono = GeistMono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const josefinSans = JosefinSans({
+  variable: "--font-josefin-sans",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} antialiased`}
       >
         {children}
       </body>
