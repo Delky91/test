@@ -1,5 +1,5 @@
 import { itemsToSell } from "@/lib/items";
-import  ItemCard  from '@/components/itemCard/itemCard'
+import  ItemCard  from '@/components/itemCard/ItemCard'
 
 export default function Home() {
   return (
